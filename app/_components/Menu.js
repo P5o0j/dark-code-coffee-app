@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import Link from 'next/link';
-import { useState } from 'react';
+import Link from "next/link";
+import { useState } from "react";
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,18 +38,34 @@ const Menu = () => {
         </div>
         <div className="hidden lg:flex lg:items-center lg:space-x-4">
           {/* Menu Items */}
-          <Link href="#" className="text-white px-3 py-2 rounded-md">Home 1</Link>
-          <Link href="#" className="text-white px-3 py-2 rounded-md">About</Link>
-          <Link href="#" className="text-white px-3 py-2 rounded-md">Services</Link>
-          <Link href="#" className="text-white px-3 py-2 rounded-md">Contact</Link>
+          <Link href="#" className="text-white px-3 py-2 rounded-md">
+            Home 1
+          </Link>
+          <Link href="#" className="text-white px-3 py-2 rounded-md">
+            About
+          </Link>
+          <Link href="#" className="text-white px-3 py-2 rounded-md">
+            Services
+          </Link>
+          <Link href="#" className="text-white px-3 py-2 rounded-md">
+            Contact
+          </Link>
         </div>
       </div>
-      <div className={`lg:hidden ${isOpen ? 'block' : 'hidden'} text-right`}>
+      <div className={`lg:hidden ${isOpen ? "block" : "hidden"} text-right`}>
         {/* Dropdown Menu Items */}
-        <Link href="#" className="block text-white px-3 py-2 rounded-md">Home</Link>
-        <Link href="#" className="block text-white px-3 py-2 rounded-md">About</Link>
-        <Link href="#" className="block text-white px-3 py-2 rounded-md">Services</Link>
-        <Link href="#" className="block text-white px-3 py-2 rounded-md">Contact</Link>
+        <Link href="#" className="block text-white px-3 py-2 rounded-md">
+          Home
+        </Link>
+        <Link href="#" className="block text-white px-3 py-2 rounded-md">
+          About
+        </Link>
+        <Link href="#" className="block text-white px-3 py-2 rounded-md">
+          Services
+        </Link>
+        <Link href="#" className="block text-white px-3 py-2 rounded-md">
+          Contact
+        </Link>
       </div>
     </nav>
   );
