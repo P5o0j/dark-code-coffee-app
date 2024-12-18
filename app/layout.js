@@ -1,6 +1,6 @@
 import { Orbitron } from "next/font/google";
 import "@/app/_styles/globals.css";
-import Menu from "./_components/Menu";
+import Header from "./_components/Header";
 
 const orbitron = Orbitron({
   subsets: ["latin"],
@@ -20,8 +20,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${orbitron.className} antialiased`}>
-      <Menu />
-      {children}</body>
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

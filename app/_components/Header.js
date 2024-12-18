@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Logo from "./Logo";
 
-const Menu = () => {
+function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -13,7 +14,8 @@ const Menu = () => {
   return (
     <nav className=" p-4">
       <div className="flex items-center justify-between">
-        <div className="text-white text-2xl font-bold">Logo</div>
+        {/* <div className="text-white text-2xl font-bold">Logo</div> */}
+        <Logo />
         <div className="lg:hidden">
           <button
             type="button"
@@ -69,6 +71,6 @@ const Menu = () => {
       </div>
     </nav>
   );
-};
+}
 
-export default Menu;
+export default Header;
