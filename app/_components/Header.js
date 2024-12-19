@@ -12,7 +12,7 @@ function Header() {
   };
 
   return (
-    <nav className=" p-4">
+    <nav className="p-2">
       <div className="flex items-center justify-between">
         {/* <div className="text-white text-2xl font-bold">Logo</div> */}
         <Logo />

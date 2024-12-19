@@ -1,6 +1,7 @@
 import { Orbitron } from "next/font/google";
 import "@/app/_styles/globals.css";
 import Header from "./_components/Header";
+import Footer from "./_components/Footer";
 
 const orbitron = Orbitron({
   subsets: ["latin"],
@@ -19,9 +20,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${orbitron.className} antialiased`}>
+      <body
+        className={`${orbitron.className} antialiased min-h-screen flex flex-col relative lg:mx-12 lg:px-0 sm:mx-8 sm:px-6`}
+      >
         <Header />
-        <main>{children}</main>
+        <div className="flex-1 py-3 px-3 ">
+          <main className=" mx-auto w-full">{children}</main>
+        </div>
+        <Footer />
       </body>
     </html>
   );
