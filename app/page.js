@@ -8,29 +8,39 @@ export default function Home() {
           Keep Calm and code on with DarkCode Coffee
         </h1>
 
-        <div className="lg:max-w-7xl mb-9 lg:text-lg mr-auto">
-          Introducing DarkCode Coffee - the IT geek&apos;s best-kept secret for
-          fueling caffeine-powered coding marathons! This brew is the ultimate
-          hack for your taste buds, brewed with a proprietary blend of
-          high-octane beans that will keep your code running faster than a
-          quantum computer. DarkCode Coffee is the go-to fuel for tech wizards,
-          with its bold flavor profile that&apos;s as smooth as a well-optimized
-          algorithm. With every sip, you&apos;ll feel the power of binary
-          coursing through your veins, igniting your coding skills and unlocking
-          new levels of productivity.
+        <div className="lg:max-w-7xl mb-9 lg:text-lg mr-auto hover:shadow-white hover:shadow-lg rounded-lg py-2">
+          <p className="mb-3">
+            Introducing DarkCode Coffee - the IT geek&apos;s best-kept secret
+            for fueling caffeine-powered coding marathons! This brew is the
+            ultimate hack for your taste buds, brewed with a proprietary blend
+            of high-octane beans that will keep your code running faster than a
+            quantum computer.
+          </p>
+          <p>
+            DarkCode Coffee is the go-to fuel for tech wizards, with its bold
+            flavor profile that&apos;s as smooth as a well-optimized algorithm.
+            With every sip, you&apos;ll feel the power of binary coursing
+            through your veins, igniting your coding skills and unlocking new
+            levels of productivity.
+          </p>
         </div>
-        <div className="lg:max-w-7xl mb-9 ml-auto lg:text-lg text-right">
-          This coffee is brewed with an encrypted blend of dark roast beans that
-          are roasted to perfection by a team of master coffee hackers. The
-          result is a complex and robust flavor profile that will make your
-          taste buds sing in binary code. With DarkCode Coffee, you&apos;ll
-          never experience a system crash during your coding sessions again.
-          It&apos;s the coffee that keeps your code running smoothly,
-          eliminating bugs and glitches with every sip. And the best part?
-          It&apos;s compatible with all coding languages, from Python to Java,
-          making it the go-to choice for all tech aficionados.
+        <div className="lg:max-w-7xl mb-9 ml-auto lg:text-lg text-right hover:shadow-white hover:shadow-lg rounded-lg py-2">
+          <p className="mb-3 ">
+            This coffee is brewed with an encrypted blend of dark roast beans
+            that are roasted to perfection by a team of master coffee hackers.
+            The result is a complex and robust flavor profile that will make
+            your taste buds sing in binary code.
+          </p>{" "}
+          <p>
+            With DarkCode Coffee, you&apos;ll never experience a system crash
+            during your coding sessions again. It&apos;s the coffee that keeps
+            your code running smoothly, eliminating bugs and glitches with every
+            sip. And the best part? It&apos;s compatible with all coding
+            languages, from Python to Java, making it the go-to choice for all
+            tech aficionados.
+          </p>
         </div>
-        <div className="lg:max-w-7xl  mb-9 lg:text-lg mr-auto">
+        <div className="lg:max-w-7xl  mb-9 lg:text-lg mr-auto hover:shadow-white hover:shadow-lg rounded-lg py-2">
           So, whether you&apos;re debugging lines of code or pushing the
           boundaries of innovation, DarkCode Coffee is your trusty sidekick in
           the world of IT. Say goodbye to lagging energy levels and hello to a
