@@ -40,33 +40,33 @@ function Header() {
         </div>
         <div className="hidden lg:flex lg:items-center lg:space-x-4">
           {/* Menu Items */}
-          <Link href="#" className="text-white px-3 py-2 rounded-md">
-            Home 1
+          <Link href="/" className="text-white px-3 py-2 rounded-md">
+            Home
           </Link>
-          <Link href="#" className="text-white px-3 py-2 rounded-md">
-            About
+          <Link href="/range" className="text-white px-3 py-2 rounded-md">
+            Our Range
           </Link>
-          <Link href="#" className="text-white px-3 py-2 rounded-md">
-            Services
+          <Link href="/gallery" className="text-white px-3 py-2 rounded-md">
+            Gallery
           </Link>
-          <Link href="#" className="text-white px-3 py-2 rounded-md">
-            Contact
+          <Link href="/contact" className="text-white px-3 py-2 rounded-md">
+            Contact Us
           </Link>
         </div>
       </div>
       <div className={`lg:hidden ${isOpen ? "block" : "hidden"} text-right`}>
         {/* Dropdown Menu Items */}
-        <Link href="#" className="block text-white px-3 py-2 rounded-md">
+        <Link href="/" className="block text-white px-3 py-2 rounded-md">
           Home
         </Link>
-        <Link href="#" className="block text-white px-3 py-2 rounded-md">
-          About
+        <Link href="/range" className="block text-white px-3 py-2 rounded-md">
+          Our Range
         </Link>
-        <Link href="#" className="block text-white px-3 py-2 rounded-md">
-          Services
+        <Link href="/gallery" className="block text-white px-3 py-2 rounded-md">
+          Gallery
         </Link>
-        <Link href="#" className="block text-white px-3 py-2 rounded-md">
-          Contact
+        <Link href="/contact" className="block text-white px-3 py-2 rounded-md">
+          Contact Us
         </Link>
       </div>
     </nav>
