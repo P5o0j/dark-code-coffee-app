@@ -1,5 +1,11 @@
 import Card from "../_components/Card";
 
+export const revalidate = 3600;
+
+export const metadata = {
+  title: "Our Range",
+};
+
 export default function Page() {
   return (
     <div>
