@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-function Coffee() {
+function CoffeeSide() {
   const fakeCoffee = {
     id: "test",
     title: "Sample Coffee",
@@ -14,55 +14,41 @@ function Coffee() {
   };
 
   return (
-    <div className="grid grid-cols-[3fr_4fr] gap-20 border border-primary-800 py-3 px-10 mb-24">
-      <div className="relative scale-[1.15] -translate-x-3">
+    // <div className="grid grid-cols-[3fr_4fr] grid-flow-col hover:grid-flow-row gap-20 border border-primary-800 py-3 px-10 mb-24">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 border lg:divide-x py-5 px-5 lg:px-10 mb-24 rounded-lg">
+      <div>
         <Image
           src={fakeCoffee.image}
           alt={`${fakeCoffee.title} coffee`}
-          fill
-          className="object-cover"
+          width={900}
+          height={1150}
+          className="object-cover	mx-auto transition-transform duration-1000 transform hover:scale-110"
         />
       </div>
 
-      <div>
-        <h3 className="text-accent-100 font-black text-7xl mb-5 translate-x-[-254px] bg-primary-950 p-6 pb-1 w-[150%]">
+      <div className="lg:pl-10">
+        <h1 className="lg:text-7xl mb-5 lg:translate-x-[-300px] lg:w-[125%] bg-black/65 uppercase font-bold w-[100%] px-6 text-center lg:text-left rounded-3xl">
           {fakeCoffee.title}
-        </h3>
+        </h1>
 
-        <p className="text-lg text-primary-300 mb-10">
+        <p className="lg:text-lg mb-10 lg:mr-[15%]">
           {fakeCoffee.description.split("  ").at(0)}
         </p>
-        <p className="text-lg text-primary-300 mb-10">
+        <p className="lg:text-lg mb-10 lg:ml-[15%] text-right">
           {fakeCoffee.description.split("  ").at(1)}
         </p>
-        <p className="text-lg text-primary-300 mb-10">
+        <p className="lg:text-lg mb-10 lg:mr-[15%]">
           {fakeCoffee.description.split("  ").at(2)}
         </p>
-        <p className="text-lg text-primary-300 mb-10">
+        <p className="lg:text-lg mb-10 lg:ml-[15%] text-right">
           {fakeCoffee.originalDescription}
         </p>
 
-        <ul className="flex flex-col gap-4 mb-7">
-          <li className="flex gap-3 items-center">
-            <span className="text-lg">
-              {/* For up to <span className="font-bold">{maxCapacity}</span> guests */}
-            </span>
-          </li>
-          <li className="flex gap-3 items-center">
-            <span className="text-lg">
-              Located in the heart of the{" "}
-              <span className="font-bold">Dolomites</span> (Italy)
-            </span>
-          </li>
-          <li className="flex gap-3 items-center">
-            <span className="text-lg">
-              Privacy <span className="font-bold">100%</span> guaranteed
-            </span>
-          </li>
-        </ul>
+        <p className="lg:text-lg">Blend: {fakeCoffee.blend}</p>
+        <p className="lg:text-lg">Flavour: {fakeCoffee.flavour}</p>
       </div>
     </div>
   );
 }
 
-export default Coffee;
+export default CoffeeSide;
