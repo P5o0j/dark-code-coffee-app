@@ -8,7 +8,7 @@ export default function Home() {
           Keep Calm and code on with DarkCode Coffee
         </h1>
 
-        <div className="lg:max-w-6xl mb-9 lg:text-lg mr-auto hover:shadow-white hover:shadow-lg rounded-lg py-2">
+        <div className="lg:max-w-6xl mb-9 lg:text-lg mr-auto hover:shadow-white hover:shadow-lg rounded-lg py-2 bg-black">
           <p className="mb-3">
             Introducing DarkCode Coffee - the IT geek&apos;s best-kept secret
             for fueling caffeine-powered coding marathons! This brew is the
@@ -24,7 +24,7 @@ export default function Home() {
             levels of productivity.
           </p>
         </div>
-        <div className="lg:max-w-6xl mb-9 ml-auto lg:text-lg text-right hover:shadow-white hover:shadow-lg rounded-lg py-2">
+        <div className="lg:max-w-6xl mb-9 ml-auto lg:text-lg text-right hover:shadow-white hover:shadow-lg rounded-lg py-2 bg-black">
           <p className="mb-3 ">
             This coffee is brewed with an encrypted blend of dark roast beans
             that are roasted to perfection by a team of master coffee hackers.
@@ -40,7 +40,7 @@ export default function Home() {
             tech aficionados.
           </p>
         </div>
-        <div className="lg:max-w-6xl  mb-9 lg:text-lg mr-auto hover:shadow-white hover:shadow-lg rounded-lg py-2">
+        <div className="lg:max-w-6xl  mb-9 lg:text-lg mr-auto hover:shadow-white hover:shadow-lg rounded-lg py-2 bg-black">
           So, whether you&apos;re debugging lines of code or pushing the
           boundaries of innovation, DarkCode Coffee is your trusty sidekick in
           the world of IT. Say goodbye to lagging energy levels and hello to a

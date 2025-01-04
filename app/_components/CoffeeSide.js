@@ -15,7 +15,7 @@ function CoffeeSide() {
 
   return (
     // <div className="grid grid-cols-[3fr_4fr] grid-flow-col hover:grid-flow-row gap-20 border border-primary-800 py-3 px-10 mb-24">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 border lg:divide-x py-5 px-5 lg:px-10 mb-24 rounded-lg">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 border lg:divide-x py-5 px-5 lg:px-10 mb-24 rounded-lg bg-black">
       <div>
         <Image
           src={fakeCoffee.image}

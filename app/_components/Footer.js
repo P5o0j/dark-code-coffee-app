@@ -17,7 +17,7 @@ function Footer() {
         error, provident eveniet doloribus, ipsam animi. Ea eos exercitationem
         optio esse culpa!
       </div> */}
-      <div className="lg:w-1/3 flex flex-col items-center mt-6 lg:mt-0">
+      <div className="lg:w-1/3 flex flex-col items-end mt-6 lg:mt-0">
         <h3 className="text-xl font-semibold mb-4 text-center lg:text-left">
           SOCIALS
         </h3>

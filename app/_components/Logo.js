@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Logo() {
   return (
-    <div className="flex items-start">
+    <div className="flex items-start ">
       <Link href="/">
         <Image
           src="/LogoWhtPNG.png"
