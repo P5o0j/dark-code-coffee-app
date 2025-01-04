@@ -44,124 +44,139 @@ function CoffeeSide() {
           {fakeCoffee.originalDescription}
         </p>
 
-        <p className="lg:text-lg">Blend: {fakeCoffee.blend}</p>
-        <p className="lg:text-lg">Flavour: {fakeCoffee.flavour}</p>
-        <div>
-          <p>
-            Grind Style: <br />{" "}
-          </p>
+        <h3 className="lg:text-lg">Blend: {fakeCoffee.blend}</h3>
+        <h3 className="lg:text-lg">Flavour: {fakeCoffee.flavour}</h3>
 
-          <div className="flex justify-between py-8">
-            {/* Option 1 */}
-            <input
-              type="radio"
-              name="ground"
-              id="beans"
-              value="roasted coffee beans"
-              className="peer hidden"
-              required
-            />
-            <label
-              htmlFor="beans"
-              className="cursor-pointer border-2 border-transparent rounded p-2 hover:border-gray-300 peer-checked:border-blue-500 peer-focus:bg-slate-500"
-              title="Roasted coffee beans"
-            >
-              <Image
-                src="/grind/coffee-beans.png"
-                alt="Roasted coffee beans"
-                height={50}
-                width={50}
-              />
-            </label>
+        {/* BAG SIZE */}
+        <div className="py-3">
+          <h3 className="mb-5 text-lg font-medium">Bag Size:</h3>
+        </div>
 
-            {/* Option 2 */}
-            <label
-              htmlFor="espresso"
-              className="cursor-pointer border-2 border-transparent rounded p-2 hover:border-gray-300 peer-checked:border-blue-500"
-              title="Ground for espresso"
-            >
+        {/* GRIND STYLE */}
+        <div className="py-3">
+          <h3 className="mb-5 text-lg font-medium">Grind Style:</h3>
+          <ul className="grid w-full gap-6 md:grid-cols-5">
+            <li className="w-full text-center">
               <input
                 type="radio"
-                name="ground"
+                id="beans"
+                name="grind"
+                value="beans"
+                className="hidden peer"
+                required
+              />
+              <label
+                htmlFor="beans"
+                title="Roasted coffee beans"
+                className="inline-flex items-center justify-between p-2 text-gray-500  border border-black rounded-lg cursor-pointer peer-checked:border-white  hover:text-gray-600 opacity-50 hover:opacity-100 peer-checked:opacity-100 "
+              >
+                <span>
+                  <Image
+                    src="/grind/coffee-beans.png"
+                    alt="Roasted coffee beans"
+                    height={50}
+                    width={50}
+                  />
+                </span>
+              </label>
+            </li>
+            <li className="w-full text-center">
+              <input
+                type="radio"
                 id="espresso"
-                value="grounded for espresso"
-                className="peer hidden"
+                name="grind"
+                value="espresso"
+                className="hidden peer"
                 required
               />
-              <Image
-                src="/grind/coffee-machine.png"
-                alt="Ground for espresso"
-                height={50}
-                width={50}
-              />
-            </label>
-
-            {/* Option 3 */}
-            <label
-              htmlFor="pods"
-              className="cursor-pointer border-2 border-transparent rounded p-2 hover:border-gray-300 peer-checked:border-blue-500"
-              title="Ground for pods"
-            >
+              <label
+                htmlFor="espresso"
+                title="Ground for espresso"
+                className="inline-flex items-center justify-between p-2 text-gray-500  border border-black rounded-lg cursor-pointer peer-checked:border-white  hover:text-gray-600 opacity-50 hover:opacity-100 peer-checked:opacity-100"
+              >
+                <span>
+                  <Image
+                    src="/grind/coffee-machine.png"
+                    alt="Ground for espresso"
+                    height={50}
+                    width={50}
+                  />
+                </span>
+              </label>
+            </li>
+            <li className="w-full text-center">
               <input
                 type="radio"
-                name="ground"
                 id="pods"
-                value="grounded for pods"
-                className="peer hidden"
+                name="grind"
+                value="pods"
+                className="hidden peer"
                 required
               />
-              <Image
-                src="/grind/pod.png"
-                alt="Ground for pods"
-                height={50}
-                width={50}
-              />
-            </label>
-
-            {/* Option 4 */}
-            <label
-              htmlFor="aeropress"
-              className="cursor-pointer border-2 border-transparent rounded p-2 hover:border-gray-300 peer-checked:border-blue-500"
-              title="Ground for aeropress"
-            >
+              <label
+                htmlFor="pods"
+                title="Ground for pods"
+                className="inline-flex items-center justify-between p-2 text-gray-500  border border-black rounded-lg cursor-pointer peer-checked:border-white  hover:text-gray-600 opacity-50 hover:opacity-100 peer-checked:opacity-100"
+              >
+                <span>
+                  <Image
+                    src="/grind/pod.png"
+                    alt="Ground for pods"
+                    height={50}
+                    width={50}
+                  />
+                </span>
+              </label>
+            </li>
+            <li className="w-full text-center">
               <input
                 type="radio"
-                name="ground"
                 id="aeropress"
-                value="grounded for aeropress"
-                className="peer hidden"
+                name="grind"
+                value="aeropress"
+                className="hidden peer"
                 required
               />
-              <Image
-                src="/grind/drip-glass.png"
-                alt="Ground for aeropress"
-                height={50}
-                width={50}
-              />
-            </label>
-
-            {/* Option 5 */}
-            <label
-              htmlFor="cafetiere"
-              className="cursor-pointer border-2 border-transparent rounded p-2 hover:border-gray-300 peer-checked:border-blue-500"
-              title="Ground for cafetiere"
-            >
+              <label
+                htmlFor="aeropress"
+                title="Ground for aeropress"
+                className="inline-flex items-center justify-between p-2 text-gray-500  border border-black rounded-lg cursor-pointer peer-checked:border-white  hover:text-gray-600 opacity-50 hover:opacity-100 peer-checked:opacity-100"
+              >
+                <span>
+                  <Image
+                    src="/grind/drip-glass.png"
+                    alt="aeropress"
+                    height={50}
+                    width={50}
+                  />
+                </span>
+              </label>
+            </li>
+            <li className="w-full text-center">
               <input
                 type="radio"
-                name="ground"
                 id="cafetiere"
-                value="grounded for cafetiere"
-                className="peer hidden"
+                name="grind"
+                value="cafetiere"
+                className="hidden peer"
                 required
               />
-              <Image
-                src="/grind/french-press.png"
-                alt="Ground for cafetiere"
-                height={50}
-                width={50}
-              />
-            </label>
-          </div>
+              <label
+                htmlFor="cafetiere"
+                title="Ground for cafetiere"
+                className="inline-flex items-center justify-between p-2 text-gray-500  border border-black rounded-lg cursor-pointer peer-checked:border-white  hover:text-gray-600 opacity-50 hover:opacity-100 peer-checked:opacity-100"
+              >
+                <span>
+                  <Image
+                    src="/grind/french-press.png"
+                    alt="Ground for cafetiere"
+                    height={50}
+                    width={50}
+                  />
+                </span>
+              </label>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
