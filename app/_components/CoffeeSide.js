@@ -46,6 +46,123 @@ function CoffeeSide() {
 
         <p className="lg:text-lg">Blend: {fakeCoffee.blend}</p>
         <p className="lg:text-lg">Flavour: {fakeCoffee.flavour}</p>
+        <div>
+          <p>
+            Grind Style: <br />{" "}
+          </p>
+
+          <div className="flex justify-between py-8">
+            {/* Option 1 */}
+            <input
+              type="radio"
+              name="ground"
+              id="beans"
+              value="roasted coffee beans"
+              className="peer hidden"
+              required
+            />
+            <label
+              htmlFor="beans"
+              className="cursor-pointer border-2 border-transparent rounded p-2 hover:border-gray-300 peer-checked:border-blue-500 peer-focus:bg-slate-500"
+              title="Roasted coffee beans"
+            >
+              <Image
+                src="/grind/coffee-beans.png"
+                alt="Roasted coffee beans"
+                height={50}
+                width={50}
+              />
+            </label>
+
+            {/* Option 2 */}
+            <label
+              htmlFor="espresso"
+              className="cursor-pointer border-2 border-transparent rounded p-2 hover:border-gray-300 peer-checked:border-blue-500"
+              title="Ground for espresso"
+            >
+              <input
+                type="radio"
+                name="ground"
+                id="espresso"
+                value="grounded for espresso"
+                className="peer hidden"
+                required
+              />
+              <Image
+                src="/grind/coffee-machine.png"
+                alt="Ground for espresso"
+                height={50}
+                width={50}
+              />
+            </label>
+
+            {/* Option 3 */}
+            <label
+              htmlFor="pods"
+              className="cursor-pointer border-2 border-transparent rounded p-2 hover:border-gray-300 peer-checked:border-blue-500"
+              title="Ground for pods"
+            >
+              <input
+                type="radio"
+                name="ground"
+                id="pods"
+                value="grounded for pods"
+                className="peer hidden"
+                required
+              />
+              <Image
+                src="/grind/pod.png"
+                alt="Ground for pods"
+                height={50}
+                width={50}
+              />
+            </label>
+
+            {/* Option 4 */}
+            <label
+              htmlFor="aeropress"
+              className="cursor-pointer border-2 border-transparent rounded p-2 hover:border-gray-300 peer-checked:border-blue-500"
+              title="Ground for aeropress"
+            >
+              <input
+                type="radio"
+                name="ground"
+                id="aeropress"
+                value="grounded for aeropress"
+                className="peer hidden"
+                required
+              />
+              <Image
+                src="/grind/drip-glass.png"
+                alt="Ground for aeropress"
+                height={50}
+                width={50}
+              />
+            </label>
+
+            {/* Option 5 */}
+            <label
+              htmlFor="cafetiere"
+              className="cursor-pointer border-2 border-transparent rounded p-2 hover:border-gray-300 peer-checked:border-blue-500"
+              title="Ground for cafetiere"
+            >
+              <input
+                type="radio"
+                name="ground"
+                id="cafetiere"
+                value="grounded for cafetiere"
+                className="peer hidden"
+                required
+              />
+              <Image
+                src="/grind/french-press.png"
+                alt="Ground for cafetiere"
+                height={50}
+                width={50}
+              />
+            </label>
+          </div>
+        </div>
       </div>
     </div>
   );
