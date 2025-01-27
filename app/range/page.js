@@ -2,18 +2,14 @@
 
 import Card from "../_components/Card";
 import { useState, useEffect } from "react";
-// import fakeCoffee from "../db.json";
-
-// export const revalidate = 3600;
-
-// export const metadata = {
-//   title: "Our Range",
-// };
+import Search from "../_components/Search";
+import CardList from "../_components/CardList";
 
 export default function Page() {
-  const [data, setData] = useState([]);
+  const [searchField, setSearchField] = useState("");
+  const [coffees, setCoffees] = useState([]);
+  const [filteredCoffees, setFilteredCoffees] = useState(coffees);
 
-  // Fetch the data from db.json
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -23,7 +19,7 @@ export default function Page() {
         }
         const jsonData = await response.json();
         console.log(jsonData);
-        setData(jsonData);
+        setCoffees(jsonData);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -34,13 +30,27 @@ export default function Page() {
     // ;
   }, []);
 
+  useEffect(() => {
+    const newFilteredCoffees = coffees.filter((coffee) => {
+      return coffee.title.toLocaleLowerCase().includes(searchField);
+    });
+
+    setFilteredCoffees(newFilteredCoffees);
+  }, [coffees, searchField]);
+
+  const onSearchChange = (event) => {
+    const searchFieldString = event.target.value.toLocaleLowerCase();
+    setSearchField(searchFieldString);
+  };
+
   return (
     <>
-      <h1 className="my-5">Our Range</h1>
-      <div className="flex flex-col lg:flex-row gap-5 lg:justify-between px-5 lg:px-0">
-        {data.map((coffee) => (
-          <Card coffee={coffee} key={coffee.id} />
-        ))}
+      <div className="flex flex-col lg:flex-row gap-5 lg:justify-between px-5 lg:px-0 my-3 items-center">
+        <h1>Our Range</h1>
+        <Search placeholder="search coffees" onChangeHandler={onSearchChange} />
+      </div>
+      <div>
+        <CardList coffees={filteredCoffees} />
       </div>
     </>
   );

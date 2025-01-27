@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 function CoffeeSide() {
   const fakeCoffee = {
@@ -11,7 +14,10 @@ function CoffeeSide() {
     image: "/product_images/DDoSBag.jpg",
     blend: "Brazil",
     flavour: "Smooth, Dark Chocolate",
+    price: 7.99,
   };
+
+  const [price, setPrice] = useState(fakeCoffee.price);
 
   return (
     // <div className="grid grid-cols-[3fr_4fr] grid-flow-col hover:grid-flow-row gap-20 border border-primary-800 py-3 px-10 mb-24">
