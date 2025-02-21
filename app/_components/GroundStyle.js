@@ -7,6 +7,8 @@ function GroundStyle() {
   function handleChange(e) {
     e.preventDefault;
     setGround(e.target.value);
+
+    return ground;
   }
 
   console.log(ground);

@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useState } from "react";
 import GroundStyle from "./GroundStyle";
+import Weight from "./Weight";
+import { FaArrowLeft } from "react-icons/fa";
 
 function CoffeeSide() {
   const fakeCoffee = {
@@ -62,10 +64,16 @@ function CoffeeSide() {
         <GroundStyle />
 
         {/* BAG SIZE */}
-        <div className="py-3">
-          <h3 className="mb-5 text-lg font-medium">
-            <span className="font-extrabold">Bag Size:</span>
-          </h3>
+        <Weight />
+
+        {/* BUTTONS */}
+        <div className="flex justify-between py-6">
+          <button className="border rounded-md w-[150] flex items-center justify-center p-2">
+            <FaArrowLeft /> <span className="px-3">Back</span>
+          </button>
+          <button className="border rounded-md w-[150] flex items-center justify-center p-2">
+            Add to cart
+          </button>
         </div>
       </div>
     </div>
