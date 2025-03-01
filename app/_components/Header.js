@@ -25,6 +25,13 @@ function Header() {
       <div className="flex items-center justify-between">
         {/* <div className="text-white text-2xl font-bold">Logo</div> */}
         <Logo />
+        <div className="flex justify-self-center lg:justify-end lg:w-[50%]">
+          <CartModal ref={modal} />
+
+          <button onClick={handleOpenCartClick}>
+            <FaShoppingBasket size="20" />
+          </button>
+        </div>
         <div className="lg:hidden">
           <button
             type="button"
@@ -61,10 +68,6 @@ function Header() {
           <Link href="/contact" className="text-white px-3 py-2 rounded-md">
             Contact Us
           </Link>
-          <CartModal ref={modal} />
-          <button onClick={handleOpenCartClick}>
-            <FaShoppingBasket size="20" />
-          </button>
         </div>
       </div>
       <div className={`lg:hidden ${isOpen ? "block" : "hidden"} text-right`}>
@@ -81,9 +84,6 @@ function Header() {
         <Link href="/contact" className="block text-white px-3 py-2 rounded-md">
           Contact Us
         </Link>
-        <button onClick={handleOpenCartClick}>
-          <FaShoppingBasket />
-        </button>
       </div>
     </nav>
   );
