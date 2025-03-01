@@ -1,8 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Logo from "./Logo";
+import CartModal from "./CartModal";
+
+import { FaShoppingBasket } from "react-icons/fa";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +13,12 @@ function Header() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const modal = useRef();
+
+  function handleOpenCartClick() {
+    modal.current.open();
+  }
 
   return (
     <nav className="p-2 ">
@@ -52,6 +61,10 @@ function Header() {
           <Link href="/contact" className="text-white px-3 py-2 rounded-md">
             Contact Us
           </Link>
+          <CartModal ref={modal} />
+          <button onClick={handleOpenCartClick}>
+            <FaShoppingBasket size="20" />
+          </button>
         </div>
       </div>
       <div className={`lg:hidden ${isOpen ? "block" : "hidden"} text-right`}>
@@ -68,6 +81,9 @@ function Header() {
         <Link href="/contact" className="block text-white px-3 py-2 rounded-md">
           Contact Us
         </Link>
+        <button onClick={handleOpenCartClick}>
+          <FaShoppingBasket />
+        </button>
       </div>
     </nav>
   );
