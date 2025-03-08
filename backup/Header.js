@@ -17,10 +17,7 @@ function Header() {
   const modal = useRef();
 
   function handleOpenCartClick() {
-    setIsOpen(true);
-  }
-  function HnadleCloseModal() {
-    setIsOpen(false);
+    modal.current.open();
   }
 
   return (
@@ -29,9 +26,7 @@ function Header() {
         {/* <div className="text-white text-2xl font-bold">Logo</div> */}
         <Logo />
         <div className="flex justify-self-center lg:justify-end lg:w-[50%]">
-          <CartModal ref={modal} onClose={HnadleCloseModal} open={isOpen}>
-            <div>THIS IS THE CART</div>
-          </CartModal>
+          <CartModal ref={modal} />
 
           <button onClick={handleOpenCartClick}>
             <FaShoppingBasket size="20" />
