@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Button from "./Button";
 
 function Card({ coffee }) {
   const { id, title } = coffee;
@@ -17,7 +18,7 @@ function Card({ coffee }) {
       <p className="py-3">This is a short description</p>
       <div className="flex justify-end">
         <Link href={`/range/${id}`}>
-          <button className="border rounded-lg p-2">Read more...</button>
+          <Button>Read more...</Button>
         </Link>
       </div>
     </div>

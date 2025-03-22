@@ -27,7 +27,7 @@ function Weight({ onBagSizeChange }) {
               value={size}
               className="hidden peer"
               required
-              onChange={handleChange} // <-- Use onChange instead of onClick
+              onChange={handleChange}
               checked={bagSize === size} // Ensure the state updates correctly
             />
             <label

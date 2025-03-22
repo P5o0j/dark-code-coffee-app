@@ -7,6 +7,7 @@ import Weight from "./Weight";
 import { FaArrowLeft } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
 import { useRouter } from "next/navigation";
+import Button from "./Button";
 
 function CoffeeSide() {
   const fakeCoffee = {
@@ -112,19 +113,15 @@ function CoffeeSide() {
 
           {/* BUTTONS */}
           <div className="flex justify-between py-6">
-            <button
-              className="border rounded-md w-[150px] flex items-center justify-center p-2 opacity-70 hover:opacity-100"
-              onClick={() => router.back()}
-            >
+            <Button onClick={() => router.back()}>
               <FaArrowLeft /> <span className="px-3">Back</span>
-            </button>
-            <button
-              className="border rounded-md w-[150px] flex items-center justify-center p-2 opacity-70 hover:opacity-100"
+            </Button>
+            <Button
               onClick={handleAddToCart}
               disabled={!selectedBagSize || !selectedGround}
             >
               Add to cart
-            </button>
+            </Button>
           </div>
         </div>
       </div>
