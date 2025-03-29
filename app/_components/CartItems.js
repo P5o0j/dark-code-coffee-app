@@ -1,4 +1,4 @@
-function Cart() {
+function CartItems() {
   const cssClass = "border-collapse border border-gray-400 p-2";
 
   return (
@@ -22,9 +22,19 @@ function Cart() {
           </td>
           <td className="text-center">£7.99</td>
         </tr>
+        <tr>
+          <td></td>
+          <td className="text-center font-bold text-xl">Postage:</td>
+          <td className="text-center ">£2.99</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td className="text-center font-bold text-xl">Total:</td>
+          <td className="text-center ">£10.98</td>
+        </tr>
       </tbody>
     </table>
   );
 }
 
-export default Cart;
+export default CartItems;

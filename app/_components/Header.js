@@ -6,7 +6,7 @@ import Logo from "./Logo";
 import CartModal from "./CartModal";
 
 import { FaShoppingBasket } from "react-icons/fa";
-import Cart from "./Cart";
+import CartItems from "./CartItems";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +31,7 @@ function Header() {
         <Logo />
         <div className="flex justify-self-center lg:justify-end lg:w-[50%]">
           <CartModal ref={modal} onClose={HnadleCloseModal} open={isOpen}>
-            <Cart />
+            <CartItems />
           </CartModal>
 
           <button onClick={handleOpenCartClick}>
