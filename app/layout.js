@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${orbitron.className} antialiased min-h-screen flex flex-col relative lg:mx-12 lg:px-0 sm:mx-8 sm:px-6 bg-[url('/bg.png')] bg-cover bg-center h-screen text-[#ababab]`}
+        className={`${orbitron.className} antialiased min-h-screen flex flex-col relative lg:mx-12 lg:px-0 sm:mx-8 sm:px-6 bg-[url('/bg.png')] bg-cover bg-center h-screen text-[#b9b9b9]`}
       >
         <Header />
         <div className="flex-1 py-3 px-3 ">
