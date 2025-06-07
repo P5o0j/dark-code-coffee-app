@@ -1,4 +1,4 @@
-// File: D:\Dev\GitHub\temp\dark-code-coffee-app\app\layout.js
+// File: D:\Dev\GitHub\dark-code-coffee-app\app\layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
