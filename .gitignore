@@ -105,3 +105,12 @@ node_modules
 .next/static/webpack/webpack.ea4eb148a4871549.hot-update.js
 .next/static/webpack/app/layout.0f0016421f2df219.hot-update.js
 .next/static/webpack/app/layout.9676358373a6d8e7.hot-update.js
+.next/trace
+.next/trace
+.next/cache/webpack/server-development/8.pack.gz
+.next/cache/webpack/server-development/9.pack.gz
+.next/cache/webpack/server-development/index.pack.gz
+.next/cache/webpack/server-development/index.pack.gz.old
+.next/trace
+.next/cache/webpack/server-development/index.pack.gz
+.next/cache/webpack/server-development/index.pack.gz.old
