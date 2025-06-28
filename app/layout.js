@@ -1,4 +1,5 @@
 import { Orbitron } from "next/font/google";
+import Header from "./_components/header/Header";
 import "./globals.css";
 
 const orbitron = Orbitron({
@@ -18,7 +19,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={orbitron.className}>{children}</body>
+      <body className={orbitron.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
