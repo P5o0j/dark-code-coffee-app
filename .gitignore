@@ -59,6 +59,7 @@
 .next/static/webpack/app/layout.b9fb67849913514d.hot-update.js
 .next/static/css/app/layout.css
 node_modules
+.next
 .next/build-manifest.json
 .next/react-loadable-manifest.json
 .next/trace
