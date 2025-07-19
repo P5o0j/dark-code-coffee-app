@@ -1,11 +1,17 @@
+import classes from "./header.module.css";
 import Image from "next/image";
 import logoImg from "../../../public/LogoWhtPNG.png";
+import Link from "next/link";
 
 function Logo() {
   return (
-    <div>
-      <Image src={logoImg} alt="DarkCode Coffee logo" />
-    </div>
+    <Link href="/">
+      <Image
+        src={logoImg}
+        alt="DarkCode Coffee logo"
+        className={classes.logo}
+      />
+    </Link>
   );
 }
 
