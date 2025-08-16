@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  min-width: 33%;
+  text-align: center;
+  /* margin: 0 auto; */
+}
+
+.item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .item,
+  .socials {
+    min-width: 100%;
+  }
+}
